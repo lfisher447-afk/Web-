@@ -21,7 +21,7 @@
 [![Version](https://img.shields.io/badge/Version-Apex.10.x-blue.svg?style=for-the-badge)](https://eclipse.org/jetty/)
 [![Architecture](https://img.shields.io/badge/Architecture-Extensive_JMX_Telemetry-brightgreen.svg?style=for-the-badge)]()
 [![Security](https://img.shields.io/badge/Security-Hardened_Q4-red.svg?style=for-the-badge)]()
-[![Status](https://img.shields.io/badge/Status-Production_Ready-orange.svg?style=for-the-badge)]()
+[![Status](https://img.shields.io/badge/Status-In_Progress-yellow.svg?style=for-the-badge)]()
 
 
 ## Overview
