@@ -1,0 +1,37 @@
+@media (max-width: 1400px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .charts-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 1024px) {
+  .sidebar-panel { width: 220px; }
+  .content-wrapper { padding: 1.5rem; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .app-wrapper { flex-direction: column; }
+  .sidebar-panel {
+    width: 100%;
+    height: 60px;
+    border-right: none;
+    border-bottom: 1px solid var(--dark-border);
+  }
+  .sidebar-panel.collapsed { width: 100%; }
+  .sidebar-nav { display: none; }
+  .sidebar-footer { display: none; }
+  .top-nav { padding: 1rem; flex-wrap: wrap; }
+  .search-input { max-width: 100%; order: 3; }
+  .nav-left { width: 100%; }
+  .content-wrapper { padding: 1rem; }
+  .kpi-grid { grid-template-columns: 1fr; }
+  .charts-row { grid-template-columns: 1fr; }
+  .health-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .top-nav { padding: 0.75rem; gap: 0.5rem; }
+  .section-header h2 { font-size: 1.5rem; }
+  .kpi-value { font-size: 1.5rem; }
+  .content-wrapper { padding: 0.75rem; }
+}

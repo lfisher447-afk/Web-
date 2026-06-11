@@ -1,0 +1,45 @@
+.theme-provider {
+  --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #0ea5e9 100%);
+  --gradient-accent: linear-gradient(135deg, #f43f5e 0%, #fb923c 100%);
+  --gradient-success: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .glass-effect {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.color-primary { color: var(--primary-color); }
+.color-secondary { color: var(--secondary-color); }
+.color-accent { color: var(--accent-color); }
+.color-success { color: var(--success-color); }
+.color-warning { color: var(--warning-color); }
+.color-error { color: var(--error-color); }
+
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-accent { background-color: var(--accent-color); }
+
+.border-primary { border-color: var(--primary-color); }
+.border-secondary { border-color: var(--secondary-color); }
+.border-accent { border-color: var(--accent-color); }
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

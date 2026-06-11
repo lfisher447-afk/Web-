@@ -1,0 +1,37 @@
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark-mode * {
+  color-scheme: dark;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: rgba(15, 23, 42, 0.5);
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+body.dark-mode input::placeholder {
+  color: #94a3b8;
+}
+
+body.dark-mode ::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
