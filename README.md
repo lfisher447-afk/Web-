@@ -348,6 +348,49 @@ Pro-Tip for absolute NPCs and certified clowns: Do not attempt to manually tune 
     *   '''text Resolution Engine: Monitor `ScheduledExecutorScheduler.schedulerPriority` and queue lengths. Trigger `restartScheduler()` if the pool is deadlocked by a bad thread. '''
 
 
+## UPDATE LIST
+
+1: ADDED HTTP/3 (QUIC) Engine control over UDP frame boundaries and receive windows via the `HTTP3ServerConnectionFactory` module.
+
+2: ADDED Thread Limit Firewall handler (`ThreadLimitHandler`) to mitigate OS context-switching exhaustion by limiting concurrent worker threads per client IP.
+
+3: ADDED Graceful Draining workflow (`ShutdownHandler`) offering token-validated connection drainage sequences for zero-downtime server exits.
+
+4: ADDED Response Buffer Management (`BufferedResponseHandler`) to optimize chunked transfer encoding and minimize redundant I/O calls.
+
+5: ADDED Active Route Recompilation handler (`ServletMappingCollection`) to rebuild routing trees dynamically under massive peak workloads.
+
+6: ADDED Prometheus Scraper rules to natively export JMX attributes directly to Prometheus metrics on port 12345.
+
+7: ADDED Off-heap direct memory instrumentation metrics under the `ByteBufferPool.directMemoryUsed` attribute.
+
+8: ADDED Multi-stage scaling configuration expanding the JMX baseline framework to a 52-node management layer.
+
+9: ADDED Low-level rate-limiting and connection throttling boundaries at the JVM network level using `DoSFilter` and `IPAccessHandler`.
+
+10: ADDED Compaction commands (`clearPool()`) allowing forced GC-level direct memory reclamation on demand.
+
+11: ADDED Multiplexed stream control to drop bloated HTTP/2 headers and frames at the parent socket level before they block queue pipelines.
+
+12: ADDED Passivated session data mapping to serialize inactive sessions directly to disk to minimize JVM heap fragmentation.
+
+13: ADDED Selector loop error diagnostics to track selector stalls, wakeups, and I/O error aggregates in real-time.
+
+14: ADDED Zero-downtime TLS rotation capabilities via the `KeyStoreScanner` and `SslContextFactory` hot-swap context.
+
+15: ADDED Refined MIME properties supporting over 160 file extensions and 140 charsets natively.
+
+16: ADDED Worker task execution latency tracking variables inside the `QueuedThreadPool` telemetry configuration.
+
+17: ADDED Active CIDR blocklist/allowlist injection logic natively within the `IPAccessHandler` boundary.
+
+18: ADDED Constraint evaluation capabilities within the `ConstraintSecurityHandler` to inspect authentication providers and role mappings.
+
+19: ADDED Absolute classpath directory mapping under the `org/eclipse/` asset path to resolve local resources under load.
+
+20: ADDED Manual selector wakeups to `SelectorManager` to force selector thread recovery before JVM sockets lock up.
+
+
 *   '''text END OF BLUEPRINT '''
 *   '''text Engineered with precision. Deployed with aggression. Got no sleep, by the way. Thank you, God. '''
 ```
