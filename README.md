@@ -24,7 +24,9 @@
 
 ## 🌌 Overview
 
-Welcome to the **Apex-Tier Eclipse Jetty Configuration Blueprint**. This repository reflects a massive infrastructural overhaul, expanding standard Jetty configurations from a baseline of 23 metadata templates to a hyper-advanced, **52-node JMX (Java Management Extensions) management framework**. 
+Welcome to the ** Web Video caster but we will talk more about  "Eclipse" 
+
+Jetty Configuration Blueprint**. This repository reflects a massive infrastructural overhaul, expanding standard Jetty configurations from a baseline of 23 metadata templates to a hyper-advanced, **52-node JMX (Java Management Extensions) management framework**. 
 
 Built for extreme concurrency, deep observability, and brutal traffic conditions, this blueprint ensures low-level HTTP parsing, socket handling, and filter mappings are no longer invisible. Every critical subsystem is actively monitored, heavily optimized, and fully scriptable.
 
