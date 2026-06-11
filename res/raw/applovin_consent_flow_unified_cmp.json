@@ -5,14 +5,23 @@
       "type": "decision",
       "decision_type": "is_al_gdpr",
       "destination_state_id_true": 20,
-      "destination_state_id_false": 1001
+      "destination_state_id_false": 1001,
+      "metadata": {
+        "geo_routing_enabled": true,
+        "integrity_check_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
     },
     {
       "id": 20,
       "type": "cmp_load",
       "decision_type": "cmp_load_success",
       "destination_state_id_true": 21,
-      "destination_state_id_false": 1001
+      "destination_state_id_false": 1001,
+      "preload_assets": [
+        "fonts",
+        "vendor_list"
+      ],
+      "timeout_ms": 5000
     },
     {
       "id": 1001,
@@ -48,7 +57,9 @@
           "style": "default",
           "destination_state_id": 12
         }
-      ]
+      ],
+      "dismissible": false,
+      "analytics_event": "tos_view"
     },
     {
       "id": 2,
@@ -76,7 +87,8 @@
       "id": 12,
       "type": "event",
       "name": "tos_ok",
-      "destination_state_id": 22
+      "destination_state_id": 22,
+      "persist_locally": true
     },
     {
       "id": 22,
@@ -88,17 +100,20 @@
     {
       "id": 21,
       "type": "cmp_show",
-      "destination_state_id": 13
+      "destination_state_id": 13,
+      "force_dialog_injection": true
     },
     {
       "id": 13,
       "type": "event",
       "name": "gdpr_ok",
-      "destination_state_id": 99
+      "destination_state_id": 99,
+      "sync_with_server": true
     },
     {
       "id": 99,
-      "type": "reinit"
+      "type": "reinit",
+      "reinit_cooldown_sec": 300
     }
   ]
 }

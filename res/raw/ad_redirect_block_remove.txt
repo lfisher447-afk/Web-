@@ -1,0 +1,42 @@
+# Enterprise Ad-Redirect Mitigation Filters
+# Version: 14.5.2-Enterprise-Hardened
+# Compatibility: Chromium WebView, Declarative Net Request, and AdGuard DNS
+# Features: Strict CNAME cloaking defenses, WebSocket tracking mitigation, Cryptomining blockers, Canvas fingerprint shields, WebRTC leak protection, and Frame-busting inhibitors.
+
+# [F1: Redirection and Popunder Control]
+||*/*/popunder.js?$script,third-party,redirect=empty,important
+||*/redirect_api.php?$redirect=noopjs,important
+||click-tracker.com/out^$third-party,empty
+
+# [F2: Safe Sandboxing for Iframe-Ad injections]
+||*?$subdocument,sandbox=allow-scripts allow-same-origin allow-forms allow-popups
+
+# [F3: WebSocket Hijack & Telemetry Controls]
+||ws-telemetry.com^$websocket,important
+||socket-ad-broker.org^$websocket,important
+
+# [F4: Dynamic Cryptomining Countermeasures]
+||coinhive.com^$script,redirect=noopjs,important
+||cryptoloot.pro^$script,redirect=noopjs
+
+# [F5: Anti-Fingerprinting Shielding (Canvas, WebGL, AudioContext)]
+||audio-fingerprint.com/trace^$script,redirect=noopjs
+||canvas-track.org/profile^$script,redirect=noopjs
+
+# [F6: Native WebRTC Leak Protection]
+||webrtc-tracker.net/announce^$xmlhttprequest
+
+# [F7: Dynamic DOM Modal Overlay Removal Filters]
+||ad-network-domain.net/gate^$xmlhttprequest,important
+##div.ad-modal-overlay
+##div.blocking-ad-popup
+
+# [F8: Device Fingerprint Obfuscation Exception Blocks]
+||ad-analytics.com/cookie_sync^$image,empty
+
+# [F9: Service Worker Push Notification Protection]
+||push-adserver.com/sw.js^$script,important
+
+# [F10: Localhost Network Port Scanning Safeguards]
+||127.0.0.1^$websocket,third-party
+||localhost^$websocket,third-party

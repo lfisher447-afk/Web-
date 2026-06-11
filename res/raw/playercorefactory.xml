@@ -1,36 +1,36 @@
 <playercorefactory>
     <players>
-        <player
-            name="WebVideoCaster"
-            audio="false"
-            type="ExternalPlayer"
-            video="true">
+        <player name="WebVideoCaster" audio="false" type="ExternalPlayer" video="true">
             <filename>com.instantbits.cast.webvideo</filename>
             <hidexbmc>true</hidexbmc>
             <playcountminimumtime>120</playcountminimumtime>
         </player>
+        <player name="VLC" audio="true" type="ExternalPlayer" video="true">
+            <filename>org.videolan.vlc</filename>
+            <args>--fullscreen --no-sub-autodetect-file</args>
+            <hidexbmc>true</hidexbmc>
+        </player>
+        <player name="MXPlayer" audio="true" type="ExternalPlayer" video="true">
+            <filename>com.mxtech.videoplayer.ad</filename>
+            <hidexbmc>true</hidexbmc>
+        </player>
+        <player name="JustPlayer" audio="false" type="ExternalPlayer" video="true">
+            <filename>com.brouilly.justplayer</filename>
+            <hidexbmc>true</hidexbmc>
+        </player>
+        <player name="NovaPlayer" audio="true" type="ExternalPlayer" video="true">
+            <filename>org.novavideo.android.novaplayer</filename>
+            <hidexbmc>true</hidexbmc>
+        </player>
     </players>
     <rules action="prepend">
-        <rule
-            player="WebVideoCaster"
-            protocols="smb"/>
-        <rule
-            dvdimage="true"
-            player="WebVideoCaster"/>
-        <rule
-            player="WebVideoCaster"
-            protocols="rtmp"/>
-        <rule
-            player="WebVideoCaster"
-            protocols="rtsp"/>
-        <rule
-            player="WebVideoCaster"
-            protocols="sop"/>
-        <rule
-            internetstream="true"
-            player="WebVideoCaster"/>
-        <rule
-            player="WebVideoCaster"
-            video="true"/>
+        <rule player="WebVideoCaster" protocols="smb|nfs|sftp|ftp"/>
+        <rule player="VLC" protocols="rtmp|rtsp|sop"/>
+        <rule dvdimage="true" player="WebVideoCaster"/>
+        <rule internetstream="true" player="WebVideoCaster"/>
+        <rule mime="application/x-mpegURL|application/vnd.apple.mpegurl" player="WebVideoCaster" video="true"/>
+        <rule mime="application/dash+xml" player="VLC" video="true"/>
+        <rule filetypes="mkv|mp4|avi|ts|mov" player="MXPlayer" video="true"/>
+        <rule player="WebVideoCaster" video="true"/>
     </rules>
 </playercorefactory>
