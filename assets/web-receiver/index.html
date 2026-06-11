@@ -1,62 +1,57 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html lang="en-us" class="ie9"><![endif]--> 
-<!--[if gt IE 9]><!--><html lang="en-us"><!--<![endif]-->
-<html>
+<html lang="en">
 <head>
-<link rel="shortcut icon" href="favicon.ico">
-<meta name="viewport" content="width=device-width, user-scalable=no" />
-<meta charset="UTF-8">
-<meta name="theme-color" content="#000000">
-<meta name="msapplication-navbutton-color" content="#000000">
-<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-<title>Web Video Caster Receiver</title>
-
-<!--[if IE 9]><script type="text/javascript" src="classList.min.js"></script><![endif]-->
-<!--[if IE 9]><script type="text/javascript" src="typedarray-polyfill.js"></script><![endif]-->
-<script src="tomodo-korz.js"></script>
-<script src="js-cookie.min.js"></script>
-<script src="domready.min.js"></script>
-<script src="require.js"></script>
-<script src="app.min.js"></script>
-<script src="/web-receiver-io/debug.js"></script>
-<script type="text/javascript">
-  DomReady.ready(function() {requirejs(['web-receiver/src/app']);});
-</script>
-<link href="app.css" rel="stylesheet">
-<!--[if IE 9]><link href="vjs-images.css" rel="stylesheet"><![endif]-->
-<style type="text/css" title="subtitles"></style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced Google Cast Web Receiver with Real-time Streaming">
+    <title>Google Cast Web Receiver - Advanced</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="disconnected">
-	<div id="log-box" class="hidden"></div>
-	<div id="idle-group" class="center-children">
-		<div id="idle-url">http://webvideocaster.app</div>
-		<div id="idle-ip" class="hidden"><span>IP: </span><span id="idle-ip-address"></span></div>
-		<div id="disconnected-message" class="user-message"><span class="user-message-text">Open Web Video Caster on your phone and connect to Web Receiver</span></div>
-		<div id="connected-message" class="user-message"><span class="user-message-text">Now you are ready to start casting your media</span></div>
-		<div id="busy-message" class="user-message"><span class="user-message-text">Another web browser is already connected to your phone</span></div>
-	</div>
-	<div id="audio-group" class="playback-group">
-		<img id="audio-poster" class="hidden" src="" />
-		<audio id="audio" controls preload="metadata">
-			<p>Your user agent does not support the HTML5 Audio element.</p>
-		</audio>
-	</div>
-	<div id="image-group" class="playback-group">
-		<img id="image">
-	</div>
-	<video id="video-group" class="video-js playback-group" controls>
-	  <p>Your user agent does not support the HTML5 Video element.</p>
-	</video>
-	<div id="hidden-log"></div>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48650902-7"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+<body>
+    <div id="receiver-container" class="receiver-container">
+        <!-- Media Display -->
+        <div id="media-display" class="media-display">
+            <video id="media-video" class="media-video" controls></video>
+            <audio id="media-audio" class="media-audio"></audio>
+        </div>
 
-		gtag('config', 'UA-48650902-7');
-	</script>
+        <!-- Status Panel -->
+        <div id="status-panel" class="status-panel">
+            <div class="status-header">Cast Receiver Status</div>
+            <div class="status-content">
+                <div class="status-item"><span>Connection:</span> <span id="connection-status" class="status-value">Idle</span></div>
+                <div class="status-item"><span>Media:</span> <span id="media-status" class="status-value">None</span></div>
+                <div class="status-item"><span>FPS:</span> <span id="fps-counter" class="status-value">0</span></div>
+                <div class="status-item"><span>Latency:</span> <span id="latency-meter" class="status-value">0ms</span></div>
+            </div>
+        </div>
+
+        <!-- Controls Panel -->
+        <div id="controls-panel" class="controls-panel">
+            <button id="btn-play" class="control-btn">▶ Play</button>
+            <button id="btn-pause" class="control-btn">⏸ Pause</button>
+            <button id="btn-stop" class="control-btn">⏹ Stop</button>
+            <button id="btn-fullscreen" class="control-btn">⛶ Fullscreen</button>
+        </div>
+
+        <!-- Volume Control -->
+        <div class="volume-control">
+            <label>Volume: <span id="volume-value">100</span>%</label>
+            <input type="range" id="volume-slider" min="0" max="100" value="100">
+        </div>
+
+        <!-- Debug Panel -->
+        <div id="debug-panel" class="debug-panel">
+            <h3>Debug Console</h3>
+            <div id="debug-log" class="debug-log"></div>
+            <input type="text" id="debug-input" placeholder="Enter debug command...">
+        </div>
+    </div>
+
+    <script src="cast-framework.js"></script>
+    <script src="media-engine.js"></script>
+    <script src="network-handler.js"></script>
+    <script src="performance-monitor.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
