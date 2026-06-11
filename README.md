@@ -1,4 +1,7 @@
 ```markdown
+#work in progress i have to understand the algorithm of the original app which shall be web video caster as the lib used in this app is more complex then participated so im going to spend all week figuring out how I can connect eclipse which servlet to a sync state as it's beneficial. I might slack on this project as I have lots of ideas every day and I writing this at 8:29 am June 11 26 started 8pm June 10 26, im taking a break from this as it's more complex and would take more time I assume but it's easier to read than understand so my brain hurts and be back on this in a week or less.
+
+
 # ECLIPSE JETTY: APEX-TIER JMX AND TELEMETRY BLUEPRINT
 ## Fully Managed, Highly Scalable, and Hardened Configuration Layer
 
