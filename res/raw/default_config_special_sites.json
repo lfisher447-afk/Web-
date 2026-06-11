@@ -1,0 +1,565 @@
+{
+  "sites": [
+    {
+        "name": "braflix",
+        "match": {
+          "type": "any",
+          "rules": [
+            {
+              "field": "urlLowercase",
+              "function": "contains",
+              "value": "braflix.ru/api/proxy?url="
+            }
+          ]
+        },
+        "intervention": {
+          "type": "mime-type-assign-mpegurl"
+        }
+    },
+    {
+        "name": "dinki",
+        "match": {
+          "type": "any",
+          "rules": [
+            {
+              "field": "urlLowercase",
+              "function": "matchesRegex",
+              "value": "[0-9a-z]*\\.[0-9a-z]+/live/[0-9a-z]+/[0-9a-z]+\\.html$"
+            }
+          ]
+        },
+        "intervention": {
+          "type": "mime-type-assign-mpegurl"
+        }
+    },
+    {
+        "name": "acestream",
+        "match": {
+            "type": "any",
+            "rules": [
+            {
+                "field": "urlLowercase",
+                "function": "matchesRegex",
+                "value": "http://127\\.0\\.0\\.1[:0-9]*/ace/r/([a-f0-9]+)/([a-f0-9]+)"
+            }
+            ]
+        },
+        "intervention": {
+            "type": "add-as-is"
+        }
+    },
+    {
+      "name": "various-1",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "requestedHost",
+            "function": "contains",
+            "values": [
+              "openloadpremium",
+              "clivertv"
+            ]
+          },
+          {
+            "field": "requestedHost",
+            "function": "endsWith",
+            "values": [
+              "vanlong.stream",
+              "kevinstreams.info",
+              "vidcloud.to"
+            ]
+          }
+        ]
+      },
+      "intervention": {
+        "type": "add-from-query-param-id"
+      }
+    },
+    {
+      "name": "various-2",
+      "match": {
+        "type": "all",
+        "rules": [
+          {
+            "field": "requestedHost",
+            "function": "endsWith",
+            "values": [
+              ".hdsto.me"
+            ]
+          },
+          {
+            "field": "urlLowercase",
+            "function": "notContains",
+            "values": [
+              "getchunklink"
+            ]
+          }
+        ]
+      },
+      "intervention": {
+        "type": "add-from-query-param-id"
+      }
+    },
+    {
+      "name": "various-3",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "requestedHost",
+            "function": "endsWith",
+            "values": [
+              "vidzen.co",
+              "uqvid.com"
+            ]
+          }
+        ]
+      },
+      "intervention": {
+        "type": "add-from-query-param-id-with-millis"
+      }
+    },
+    {
+      "name": "various-4",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "/playlist/[0-9a-f]{32}/[0-9]{13,14}(?:\\.m3u8)?$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "user-agent-replace",
+        "params": {
+          "userAgentKey": "CHROME_83_OSX"
+        }
+      }
+    },
+    {
+      "name": "ezylink",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "/cdn/down/[0-9a-f]{32}/master(?:\\.txt)?$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "various-5",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "getchunklink.*&mid="
+          }
+        ]
+      },
+      "intervention": {
+        "type": "add-from-query-param-id"
+      }
+    },
+    {
+      "name": "Cinemania",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "/play/([0-9a-f]{32})"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "add-from-query-param-id"
+      }
+    },
+    {
+      "name": "HDMario",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "contains",
+            "values": [
+              "hdmario.live/pl/"
+            ]
+          }
+        ]
+      },
+      "intervention": {
+        "type": "m3u8-extension-from-header",
+        "params": {
+          "header": "X-Secure-Proof"
+        }
+      }
+    },
+    {
+      "name": "CartoonWire",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "cartoonwire\\.to/hls/([0-9a-f]{32})/([0-9a-f]{32})\\?secure="
+          }
+        ]
+      },
+      "intervention": {
+        "type": "url-replace-substring",
+        "params": {
+          "old-value": "/hls/",
+          "new-value": "/playlist/"
+        }
+      }
+    },
+    {
+      "name": "surahusa",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "values": [
+              "\\.surahusa\\..*/video/data/.*\\.m3u8$"
+            ]
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "Verida",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "verida\\.live/getindex\\.php\\?id=([0-9a-zA-Z]{12})"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "vcdnx",
+        "match": {
+            "type": "any",
+            "rules": [
+            {
+                "field": "urlLowercase",
+                "function": "matchesRegex",
+                "value": "vcdnx\\.com/hls/[0-9a-zA-Z]*/[0-9a-zA-Z]*=\\![0-9a-zA-Z\\$]*$"
+            }
+            ]
+        },
+        "intervention": {
+            "type": "mime-type-assign-mpegurl"
+        }
+    },
+    {
+      "name": "vidsrc",
+        "match": {
+            "type": "any",
+            "rules": [
+            {
+                "field": "urlLowercase",
+                "function": "contains",
+                "value": ".m3u8.png?"
+            }
+            ]
+        },
+        "intervention": {
+            "type": "mime-type-assign-mpegurl"
+        }
+    },
+    {
+      "name": "CDN-Player",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "cdn-player\\.ml/_player2/option_1\\.php\\?id=[0-9a-zA-Z]{32}"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-and-headers-nullify"
+      }
+    },
+    {
+      "name": "Wootly",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "bplay\\.wootly\\.ch\\/videoplayback\\?"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-and-headers-nullify"
+      }
+    },
+    {
+      "name": "Nebula",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "\\.nebula\\.to/([0-9a-f]{40})"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-and-headers-nullify"
+      }
+    },
+    {
+      "name": "ContentX",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "contentx\\.me/m\\.php\\?v="
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "GDriveCDN",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "gdrivecdn\\.[0-9a-zA-Z]*/drive/index.php\\?id="
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign",
+        "params": {
+          "mime-type": "video/mp4"
+        }
+      }
+    },
+    {
+      "name": "GithubUserContent",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "\\.githubusercontent\\.com/[0-9a-zA-Z]{20}/[0-9a-zA-Z]{20}/main/[0-9a-zA-Z]*/?[0-9a-zA-Z]{20}\\.jpg"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "Bring-Life",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "bring-life\\.xyz\\/ch\\/[0-9a-zA-Z]*\\.gg"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "Akamai",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "akamaihd\\.net\\/[0-9a-zA-Z_\\/\\.\\-]*\\/manifest$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign",
+        "params": {
+          "mime-type": "video/vnd.mpeg.dash.mpd"
+        }
+      }
+    },
+    {
+      "name": "MediaDelivery",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "mediadelivery\\.net\\/[0-9a-zA-Z_\\/\\.\\-]*\\/[0-9a-zA-Z_]*\\.drm"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "various-6",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "\\/usergen[d]?[0-9a-zA-Z_\\/\\.\\-=&\\?:]*\\.htm$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "PiroPlay",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "piroplay\\.xyz\\/cdn\\/hls\\/[0-9a-zA-Z_]*\\/master.txt$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "TheGentleClass",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "\\.thegentleclass\\.xyz\\/hls\\/class[0-9]\\.css$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "Various-7",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "\\/hls[0-9]*\\/[0-9a-zA-Z_\\/]*\\/master.m3u8"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    },
+    {
+      "name": "mail.ru",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "mail.ru\\/weblink\\/view\\/+[0-9a-zA-Z_]*\\/[0-9a-zA-Z_]*$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-and-headers-remove",
+        "params": {
+          "headers": [
+            "Referer"
+          ]
+        }
+      }
+    },
+    {
+      "name": "utret.fun",
+        "match": {
+            "type": "any",
+            "rules": [
+            {
+                "field": "urlLowercase",
+                "function": "matchesRegex",
+                "value": "/static/[0-9a-zA-Z_]*/[0-9a-zA-Z_]*/[0-9a-zA-Z_]*/[0-9a-zA-Z_]*\\.txt\\?m=.*"
+            }
+            ]
+        },
+        "intervention": {
+            "type": "mime-type-assign-mpegurl"
+        }
+    },
+    {
+      "name": "PressYo",
+      "match": {
+        "type": "any",
+        "rules": [
+          {
+            "field": "urlLowercase",
+            "function": "matchesRegex",
+            "value": "pressyo\\.shop\\/storage\\/[0-9a-zA-Z_]*\\/.*\\.jpeg$"
+          }
+        ]
+      },
+      "intervention": {
+        "type": "mime-type-assign-mpegurl"
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+#0 yt3.ggpht.com
+#0 geoip.insticator.com
+#0 tsawry.com
+#0 zupimages.net
+#0.0.0.0 nahnoji.cz
+#0.0.0.0 asset.nahnoji.cz
+#0.0.0.0 img.nahnoji.cz
+#0.0.0.0 js.nahnoji.cz
+#0.0.0.0 mine.nahnoji.cz
+#0.0.0.0 www.nahnoji.cz
+#used by https://www.13.cl/programas/soltera-otra-vez-t1/capitulos/capitulo-94-cristi-asume-como-jefa-de-la-empresa/143693
+#0 scdn.cxense.com
+#0 rscdn.cxense.com
+#freezes a site
+#0.0.0.0 sentry-cdn.com
+#0.0.0.0 browser.sentry-cdn.com
+#0.0.0.0 js.sentry-cdn.com
+#https://www.classonlive.com/
+#0.0.0.0 p.brid.tv
+#0.0.0.0 stats-dev.brid.tv
+#https://www.mako.co.il/food-masterchef/video?subChannelId=e824807a57086710VgnVCM100000700a10acRCRD&vcmid=972fd2a4da686710VgnVCM200000650a10acRCRD uses it for videojs
+#0 googleads.github.io
+#can't log into https://einthusan.tv/login/?lang=tamil
+#0 d2wy8f7a9ursnm.cloudfront.net
+#https://www.tf1.fr/tf1/les-douze-coups-de-midi/videos/les-12-coups-de-midi-du-4-juillet-2021-59262719.html
+#0 connect.facebook.net
+#from https://m.animeflv.net/
+#0 streamium.xyz
+#from https://streamingcommunity.live/watch/3963?e=29020
+#0 scws.xyz
+#videos from soap2day
+#0 mrqls.to
+#0 b2.mrqls.to
+#0 bm1.mrqls.to
+#0 d1.mrqls.to
+#0 f1.mrqls.to
+#0 f2.mrqls.to
+#0 f3.mrqls.to
+#0 m1.mrqls.to
+#0 m14.mrqls.to
+#0 q11.mrqls.to
+#0 q14.mrqls.to
+#0 q5.mrqls.to
+#0 q6.mrqls.to
+#0 t2g1.mrqls.to
+#0 t2g3.mrqls.to
+#0 t2g4.mrqls.to
+#yesmovie videos don't work without this
+#0.0.0.0 ping-meta-prd.jwpltx.com
+#0.0.0.0 prd.jwpltx.com
+#mediaset shows video ads and it won't work without this
+#0.0.0.0 mediasetitalia01.wt-eu02.net
+#0 cdns.gigya.com
+#canalplus
+#0 ads-engagement.presage.io
+#https://www.westword.com/restaurants/video-hamburguesas-don-jesus-builds-a-tribe-sized-meal-for-ten-on-one-bun-7979711 uses connatix
+#0 vid.connatix.com
+#0 cd.connatix.com
+#0 cds.connatix.com
+#0 img.connatix.com
+# The following domains may interfere with https://sp.nicovideo.jp/watch/sm40418890?ref=user_video
+#0.0.0.0 s0.2mdn.net
+#0 ads.nicovideo.jp
+#chaturbate
+#0 static-assets.highwebmedia.com
+# allow http://www.cuevana3.ai/ videos
+#0 tomatomatela.club
+
+#0 librefutboltv.com
+
+#needed for https://www.caffeine.tv/ballislife/video/db13bc00-b307-11ed-8080-80004bef1f62
+#0 jssdkcdns.mparticle.com
+
+#this is the video iframe of http://buffstream.io/
+#0 embedstream.me
+
+#https://daddylivehd.sx/stream/stream-317.php uses the tab switcher from here
+#0 d11enq2rymy0yl.cloudfront.net
+#0.0.0.0 onlinewebtv.lol
+#0.0.0.0 webudit.onlinewebtv.lol
+#0.0.0.0 ddy1.onlinewebtv.lol
+#0.0.0.0 webuit.onlinewebtv.lol
+#0.0.0.0 ddy5.onlinewebtv.lol
+#0.0.0.0 cdn.onlinewebtv.lol
+#0.0.0.0 ddyx2.onlinewebtv.lol
+#0.0.0.0 ddy6.onlinewebtv.lol
+
+#https://gs.freestreams-live1.tv/indiana-pacers/
+#0 ntuplay.xyz
+#0 embedstream.me
+
+#comes from https://www.adultswim.com/streams/rick-and-morty and prevents the video from playing on the phone
+#0.0.0.0 gcdn.2mdn.net
+#0 manifest.auditude.com
+
+#0.0.0.0 pubads.g.doubleclick.net	#interferes with video on cwtv.com
+
+#ad block detection https://playhublite.com/movies/114
+#0 appcdn01.xyz
+
+#https://meumundogay.net/especial-homem-trans-10-brasileiro-e-gringo/ uses it
+#0 dooood.com
+
+#https://www.repretel.com/envivo-canal6/ won't play without this
+#0 cdn.getadjacent.com
+#0 api.getadjacent.com
+#0 securepubads.g.doubleclick.net
+
+#xhamster live needs these domains
+#0 doppiocdn.com
+#0 edge-hls.doppiocdn.com
+#0 b-hls-24.doppiocdn.com
+#0 b-hls-01.doppiocdn.com
+#0 b-hls-02.doppiocdn.com
+#0 b-hls-03.doppiocdn.com
+#0 b-hls-04.doppiocdn.com
+#0 b-hls-05.doppiocdn.com
+#0 b-hls-06.doppiocdn.com
+#0 b-hls-08.doppiocdn.com
+#0 b-hls-09.doppiocdn.com
+#0 b-hls-11.doppiocdn.com
+#0 b-hls-12.doppiocdn.com
+#0 b-hls-13.doppiocdn.com
+#0 b-hls-14.doppiocdn.com
+#0 b-hls-15.doppiocdn.com
+#0 b-hls-16.doppiocdn.com
+#0 b-hls-17.doppiocdn.com
+#0 b-hls-18.doppiocdn.com
+#0 b-hls-19.doppiocdn.com
+#0 b-hls-20.doppiocdn.com
+#0 b-hls-21.doppiocdn.com
+#0 b-hls-22.doppiocdn.com
+#0 b-hls-23.doppiocdn.com
+#0 b-hls-24.doppiocdn.com
+#0 b-hls-25.doppiocdn.com
+#0 b-hls-26.doppiocdn.com
+#0 b-hls-27.doppiocdn.com
+#0 b-hls-28.doppiocdn.com
+#0 b-hls-29.doppiocdn.com
+
+#won't load site without this
+#0 animesuge.to
+
+#this site https://blurayufr.xyz/ warns about ad block
+#0.0.0.0 pagead1.googlesyndication.com
+#0.0.0.0 pagead2.googlesyndication.com
+#0.0.0.0 pagead3.googlesyndication.com
+#0.0.0.0 pagead.googlesyndication.com
+
+#0 static.cloudflareinsights.com
+
+#from https://www.tv8.it/streaming
+#0 entitlements.jwplayer.com
+#0 cdn.speedcurve.com
+#0 c.amazon-adsystem.com
+
+# https://seriesturcastv.to/kurulus-osman-capitulo-151/
+#0 joathath.com
+
+#cameraprive.com appears to be a site users use
+#0 cameraprive.com
+
+#from https://i.dramafuntv.com/watch.php?vid=0b65cd23a
+#0 aydogs.com
+
+#from https://www1.yoturkish.com/kardeslerim-episode-7/
+#0 tukipasti.com
+
+#from https://www.iq.com/play/atpm471rh1?lang=pt_br&sh_pltf=5
+#0 fundingchoicesmessages.google.com
+
+#0.0.0.0 caliente.mx
+#0.0.0.0 bet.caliente.mx
+#0.0.0.0 login.caliente.mx
+#0.0.0.0 oapi.caliente.mx
+#0.0.0.0 online.caliente.mx
+#0.0.0.0 push-sports.caliente.mx
+#0.0.0.0 servicios.caliente.mx
+#0.0.0.0 sports.caliente.mx
+#0.0.0.0 static.caliente.mx
+#0.0.0.0 utils.caliente.mx
+#0.0.0.0 www.caliente.mx
+
+#can't play video at https://www.cielotv.it/streaming.html?zoneid=footer_streaming
+#0 cdn.privacy-mgmt.com
+
+#https://asnwish.com/e/dhcd5pj4m5b5
+#0 asnwish.com
+
+#https://stripchat.com/ needs it
+#0 go.stripchat.com
+#0 stripchat.com
+#0 stripchat.global
+#0 go.stripchat.global
+#0 img.doppiocdn.com
+
+# a server from https://ww4.fmovies.co/film/snow-white-1630858706/ needs this
+#0 widgets.outbrain.com
+
+#won't play video without allowing the domain below https://www.cinecalidad.ec/ver-pelicula/turno-maldito/
+#0 trstx.org
+
+#thumbnails from hurawatchtv.tv
+#0 f.woowoowoowoo.net
+
+#won't load correctly without it https://disk.yandex.com/i/KOWfUIo96Iz92w
+#0 yastatic.net
+
+# https://wcm.cuevana3.nu/ver-el-episodio/118048/episodio-3-de-amia-el-fin-de-la-verdad-temporada-1/
+#0 doo.lat
+
+
+#cineby video won't even play
+#0 gradejumper.site

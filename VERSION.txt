@@ -1,0 +1,16 @@
+1.6.2
+
+Release notes: (v1.4.0 => v 1.6.0)
+===========================
+
+Android-SDK
+ - Upgrade the Whisperplay.jar version to support API level 30+.
+ - Migrate Android Support Library in use to AndroidX.
+ - Refresh sample applications and remove the deprecated ones.
+ - Upgrade Fling SDK libs to target API level 30.
+ 
+iOS-SDK
+ - Add support for simulator running on Mac M1 chip
+ - Remove support for simulator running on i386
+ - Remove support for armv7 based devices
+ - Upgrade base packages to newer versions

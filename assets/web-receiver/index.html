@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="en-us" class="ie9"><![endif]--> 
+<!--[if gt IE 9]><!--><html lang="en-us"><!--<![endif]-->
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta charset="UTF-8">
+<meta name="theme-color" content="#000000">
+<meta name="msapplication-navbutton-color" content="#000000">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+<title>Web Video Caster Receiver</title>
+
+<!--[if IE 9]><script type="text/javascript" src="classList.min.js"></script><![endif]-->
+<!--[if IE 9]><script type="text/javascript" src="typedarray-polyfill.js"></script><![endif]-->
+<script src="tomodo-korz.js"></script>
+<script src="js-cookie.min.js"></script>
+<script src="domready.min.js"></script>
+<script src="require.js"></script>
+<script src="app.min.js"></script>
+<script src="/web-receiver-io/debug.js"></script>
+<script type="text/javascript">
+  DomReady.ready(function() {requirejs(['web-receiver/src/app']);});
+</script>
+<link href="app.css" rel="stylesheet">
+<!--[if IE 9]><link href="vjs-images.css" rel="stylesheet"><![endif]-->
+<style type="text/css" title="subtitles"></style>
+
+</head>
+<body class="disconnected">
+	<div id="log-box" class="hidden"></div>
+	<div id="idle-group" class="center-children">
+		<div id="idle-url">http://webvideocaster.app</div>
+		<div id="idle-ip" class="hidden"><span>IP: </span><span id="idle-ip-address"></span></div>
+		<div id="disconnected-message" class="user-message"><span class="user-message-text">Open Web Video Caster on your phone and connect to Web Receiver</span></div>
+		<div id="connected-message" class="user-message"><span class="user-message-text">Now you are ready to start casting your media</span></div>
+		<div id="busy-message" class="user-message"><span class="user-message-text">Another web browser is already connected to your phone</span></div>
+	</div>
+	<div id="audio-group" class="playback-group">
+		<img id="audio-poster" class="hidden" src="" />
+		<audio id="audio" controls preload="metadata">
+			<p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+	</div>
+	<div id="image-group" class="playback-group">
+		<img id="image">
+	</div>
+	<video id="video-group" class="video-js playback-group" controls>
+	  <p>Your user agent does not support the HTML5 Video element.</p>
+	</video>
+	<div id="hidden-log"></div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48650902-7"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-48650902-7');
+	</script>
+</body>
+</html>
