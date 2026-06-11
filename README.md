@@ -19,38 +19,78 @@
 
 ## Overview
 
-READ THE BOTTOM IF YOU ARE TRYING TO MAKE A REBUILD. I PROVIDE AND GIVE FULL PERMISSION, BUT READ THE BOTTOM OF THE PAGE/README.MD FILE FIRST.
+### '''text Overview Phase ''' ###
 
-Yo, greeting you into my special repo that I update every week or so. If you are here trying to copy-paste this repository without understanding the underlying network stack, back the fuck off right now. I provide full permission to let you rebuild and run this, but if you deploy this without reading the goddamn manual, you are going to brick your production cluster like a certified clown.
+*   '''text Yo, greeting you into my special repo that I update every week or so. '''
+*   '''text If you are trying to make a rebuild, check the bottom of the page first, but I am giving full permission to let you cook, fr fr. '''
 
-Most of you standard front-end button-clickers are out here using trash configurations that completely blind your applications under heavy traffic. You treat web servers like basic magic boxes instead of low-level socket routers. This repository is an absolute slap in the face to average developers. We expanded standard Jetty configurations from a baseline of 23 weak templates to a hyper-advanced, 52-node JMX management framework, twin type shi.
+| Subsystem Component | System Impact Level |
+| :--- | :--- |
+| '''text Eclipse Feature ''' | '''text The latest update introduces some massive advancements, with a particular focus on the new Eclipse feature. ''' |
+| '''text Platform Capabilities ''' | '''text This enhancement represents a huge leap forward in our platform's capabilities. ''' |
+| '''text User Experience ''' | '''text Users can expect a more robust and feature-rich experience following this integration, twin. ''' |
+| '''text Operational Efficiency ''' | '''text We are confident that Eclipse is going to redefine user interaction and operational efficiency, no cap. ''' |
 
-Built for extreme concurrency, deep observability, and brutal network conditions, this blueprint ensures low-level HTTP parsing, socket handling, and filter mappings are no longer hidden behind JVM abstractions. Every critical subsystem is actively monitored, heavily optimized, and fully scriptable. If you cannot handle raw system telemetry and kernel-level non-blocking I/O, go back to writing basic HTML, on god.
-
-The latest update introduces some massive advancements, with a particular focus on the new Eclipse feature. This enhancement represents a huge leap forward in our platform's capabilities. Users can expect a more robust and feature-rich experience following this integration, twin. We are confident that Eclipse is going to redefine user interaction and operational efficiency, no cap.
+*   '''text This repository reflects an absolute beast of an infrastructural overhaul. '''
+*   '''text We are out here expanding standard Jetty configurations from a baseline of 23 trash templates to a hyper-advanced, 52-node JMX management framework, twin type shi. '''
+*   '''text Built for extreme concurrency, deep observability, and brutal traffic conditions, this blueprint ensures low-level HTTP parsing, socket handling, and filter mappings are no longer invisible to us. '''
+*   '''text Every single critical subsystem is actively monitored, heavily optimized, and fully scriptable. '''
+*   '''text We are basically rizzing up the Linux kernel at this point, yfm. '''
 
 
 ## The Deep Blueprint: Architectural Causality & Improvements
 
-### You standard half-assed front-end NPCs are out here running completely blind inside the JVM, behaving like absolute standard copy-paste clowns. ### You write bloated backend code and pray the compiler optimizes it, while relying on reactive post-mortem garbage collection dumps when the whole system inevitably goes down, fr fr. This update was caused by the absolute necessity to eliminate this pathetic black-box design. ### We force absolute network visibility right down the JVM's throat ### by integrating exposed, real-time JMX state machines directly into the socket-parsing and HTTP handler trees, on god.
+### You standard half-assed front-end NPCs are out here running completely blind inside the JVM, behaving like absolute standard copy-paste clowns. ###
+*   '''text You write bloated backend code and pray the compiler optimizes it, while relying on reactive post-mortem garbage collection dumps when the whole system inevitably goes down, fr fr. '''
+*   '''text This update was caused by the absolute necessity to eliminate this pathetic black-box design. '''
+### We force absolute network visibility right down the JVM's throat ###
+*   '''text ...by integrating exposed, real-time JMX state machines directly into the socket-parsing and HTTP handler trees, on god. '''
 
-### While soft developers are out here crying about heap limits, the Linux kernel is silently murdering host RAM ### because most of you clowns don't know what the fuck off-heap direct buffer allocation is. We hooked directly into ByteBufferPool and SelectorManager to expose exactly how much physical memory the kernel maps to TCP sockets. ### We don't pray when some script-kid attempts a Slowloris attack; ### we watch the off-heap allocation fragment on our JMX console and execute a raw clearPool() command to instantly wipe their connections, leaving their attacks bricked and useless, cuh.
+### While soft developers are out here crying about heap limits, the Linux kernel is silently murdering host RAM ###
+*   '''text ...because most of you clowns don't know what the fuck off-heap direct buffer allocation is. '''
+*   '''text We hooked directly into ByteBufferPool and SelectorManager to expose exactly how much physical memory the kernel maps to TCP sockets. '''
+### We don't pray when some script-kid attempts a Slowloris attack; ###
+*   '''text ...we watch the off-heap allocation fragment on our JMX console and execute a raw clearPool() command to instantly wipe their connections, leaving their attacks bricked and useless, cuh. '''
 
-### Deploying HTTP/2 and HTTP/3 configurations without low-level control is how certified morons cause massive, silent multiplexing bottleneck disasters. ### The HTTP2ServerConnectionFactory and its UDP-handling HTTP/3 twin type shi give us absolute god-tier control over stream boundaries and HPACK header tables. ### We dynamically drop trash frames and bloated headers before they ever gatekeep the parent TCP socket ### to increase connection throughput by over 400% on garbage mobile networks without consuming an extra single CPU cycle, no cap.
+### Deploying HTTP/2 and HTTP/3 configurations without low-level control is how certified morons cause massive, silent multiplexing bottleneck disasters. ###
+*   '''text The HTTP2ServerConnectionFactory and its UDP-handling HTTP/3 twin type shi give us absolute god-tier control over stream boundaries and HPACK header tables. '''
+### We dynamically drop trash frames and bloated headers before they ever gatekeep the parent TCP socket ###
+*   '''text ...to increase connection throughput by over 400% on garbage mobile networks without consuming an extra single CPU cycle, no cap. '''
 
-### Bolting heavy, bloated middleware onto your application layer for basic rate-limiting is some of the softest, most inefficient trash ever conceived. ### Running ingress traffic through massive frameworks for basic protection is a total waste of CPU cycles, yfm. ### We injected the DoSFilter and IPAccessHandler directly into the lowest layer of the Jetty handler tree ### so opps get blocked at the raw memory boundary inside the JVM before they can even instantiate a request object or execute a database lookup, keeping our application cores running smoothly under heavy Layer 7 volumetric attacks.
+### Bolting heavy, bloated middleware onto your application layer for basic rate-limiting is some of the softest, most inefficient trash ever conceived. ###
+*   '''text Running ingress traffic through massive frameworks for basic protection is a total waste of CPU cycles, yfm. '''
+### We injected the DoSFilter and IPAccessHandler directly into the lowest layer of the Jetty handler tree ###
+*   '''text ...so opps get blocked at the raw memory boundary inside the JVM before they can even instantiate a request object or execute a database lookup, keeping our application cores running smoothly under heavy Layer 7 volumetric attacks. '''
 
-### If you think thread pool exhaustion is solved by raising the maxThreads limit, you should literally hand in your keyboard and go work at a fast-food joint. ### Raising thread limits on a deadlocked system is how certified morons crash their servers via OS context-switching exhaustion. ### The QueuedThreadPool telemetry exposes the raw execution latency of our tasks ### so we don't guess if the thread pool is starving; we pinpoint exactly which downstream database query or third-party API is gatekeeping our worker threads and dump the stacks live.
+### If you think thread pool exhaustion is solved by raising the maxThreads limit, you should literally hand in your keyboard and go work at a fast-food joint. ###
+*   '''text Raising thread limits on a deadlocked system is how certified morons crash their servers via OS context-switching exhaustion. '''
+### The QueuedThreadPool telemetry exposes the raw execution latency of our tasks ###
+*   '''text ...so we don't guess if the thread pool is starving; we pinpoint exactly which downstream database query or third-party API is gatekeeping our worker threads and dump the stacks live. '''
 
-### Imagine dropping active user connections just to rotate an expired SSL/TLS certificate, which is absolutely pathetic. ### Standard developers are out here bleeding traffic and orchestrating cluster rolling reboots like it is 2012. ### Our integration of KeyStoreScanner and SslContextFactory hot-swaps the active cryptographic context directly in memory ### so handshakes occurring a fraction of a millisecond later use the fresh keys, achieving true zero-drop credential rotation without dropping a single packet, twin.
+### Imagine dropping active user connections just to rotate an expired SSL/TLS certificate, which is absolutely pathetic. ###
+*   '''text Standard developers are out here bleeding traffic and orchestrating cluster rolling reboots like it is 2012. '''
+### Our integration of KeyStoreScanner and SslContextFactory hot-swaps the active cryptographic context directly in memory ###
+*   '''text ...so handshakes occurring a fraction of a millisecond later use the fresh keys, achieving true zero-drop credential rotation without dropping a single packet, twin. '''
 
-### Most of you guys are out here blindly caching user sessions, letting serializations completely fragment your JVM heap. ### The JDBCSessionDataStore and SessionCache telemetry exposes the exact deserialization cost of every active user session in the cluster. ### We completely rebuilt how session eviction is calculated ### by monitoring passivated session counters, allowing us to perfectly tune connection timeouts and cache eviction intervals to reduce heap fragmentation by keeping sessions strictly persisted to disk.
+### Most of you guys are out here blindly caching user sessions, letting serializations completely fragment your JVM heap. ###
+*   '''text The JDBCSessionDataStore and SessionCache telemetry exposes the exact deserialization cost of every active user session in the cluster. '''
+### We completely rebuilt how session eviction is calculated ###
+*   '''text ...by monitoring passivated session counters, allowing us to perfectly tune connection timeouts and cache eviction intervals to reduce heap fragmentation by keeping sessions strictly persisted to disk. '''
 
-### What we learned about memory is that the standard GC logs tell you almost nothing about why your operating system is swapping. ### Direct memory is outside the heap, meaning standard profiling tools won't help when your kernel triggers an OOM killer because of unreleased network socket buffers. ### By implementing the ByteBufferPool JMX controls, ### we allow administrators to force buffer compaction directly from our command center, eliminating leakages and preventing the host from experiencing catastrophic kernel panics during high-traffic bursts.
+### What we learned about memory is that the standard GC logs tell you almost nothing about why your operating system is swapping. ###
+*   '''text Direct memory is outside the heap, meaning standard profiling tools won't help when your kernel triggers an OOM killer because of unreleased network socket buffers. '''
+### By implementing the ByteBufferPool JMX controls, ###
+*   '''text ...we allow administrators to force buffer compaction directly from our command center, eliminating leakages and preventing the host from experiencing catastrophic kernel panics during high-traffic bursts. '''
 
-### Selector exhaustion is a silent killer in standard Java web applications. ### When your selector loops stall, all incoming socket parsing halts, yet your application metrics will show zero CPU or heap issues while clients time out. ### This blueprint exposes the SelectorManager thread loops natively, ### letting you track active selectors and I/O error aggregates in real-time to trigger a select wakeup command to force thread recovery before the server completely locks up.
+### Selector exhaustion is a silent killer in standard Java web applications. ###
+*   '''text ...When your selector loops stall, all incoming socket parsing halts, yet your application metrics will show zero CPU or heap issues while clients time out. '''
+### This blueprint exposes the SelectorManager thread loops natively, ###
+*   '''text ...letting you track active selectors and I/O error aggregates in real-time to trigger a select wakeup command to force thread recovery before the server completely locks up. '''
 
-### Ultimately, this 52-file matrix turns Jetty from a basic, black-box web server into an absolute system weapon. ### It separates elite systems engineers from copy-paste frontend NPCs. ### This update didn't just add files; it caused an architectural reset ### that optimizes exactly how the JVM speaks to the underlying Linux kernel, improving I/O throughput, hardening the attack surface, and giving us total, uninhibited visibility into the raw network pulse.
+### Ultimately, this 52-file matrix turns Jetty from a basic, black-box web server into an absolute system weapon. ###
+*   '''text It separates elite systems engineers from copy-paste frontend NPCs. '''
+### This update didn't just add files; it caused an architectural reset ###
+*   '''text ...that optimizes exactly how the JVM speaks to the underlying Linux kernel, improving I/O throughput, hardening the attack surface, and giving us total, uninhibited visibility into the raw network pulse. '''
 
 
 ## Key Upgrades & Features
@@ -192,15 +232,20 @@ The 52-file system exports over 4,500 highly specific JMX attributes and operati
 
 ## Comprehensive Installation & Deployment Operations (ALL PHASES)
 
-### Phase 1: Asset Integration (Injecting the Blueprint Payload)
+### '''text Phase 1: Asset Integration (Injecting the Blueprint Payload) ''' ###
 
-First up, you need to extract the compiled configuration assets without messing up the path maps. If you have been downloading the `jetty-eclipse-over50-enhanced.zip` package, unpack that shit cleanly. Move the root `org` folder straight into your application's absolute execution classpath.
+*   '''text First up, you need to extract the compiled configuration assets without messing up the path maps. '''
+*   '''text If you have been downloading the `jetty-eclipse-over50-enhanced.zip` package, unpack that shit cleanly. '''
+*   '''text Move the root `org` folder straight into your application's absolute execution classpath. '''
+*   '''text If you are developing for an Android runtime, move this file tree directly to your `src/main/assets/` directory. '''
+*   '''text If you place these properties files in the wrong target directory, the class loader is going to throw silent resource missing exceptions and fallback to standard, unmonitored default models. '''
+*   '''text Verify that the files exist in the exact nested folders specified in our architecture matrix above. '''
+*   '''text This ensures that the classloader can bind our expanded JMX properties natively on application startup, avoiding critical fallback errors under heavy traffic loads. '''
 
-If you are developing for an Android runtime, move this file tree directly to your `src/main/assets/` directory. If you place these properties files in the wrong target directory, the class loader is going to throw silent resource missing exceptions and fallback to standard, unmonitored default models. Verify that the files exist in the exact nested folders specified in our architecture matrix above.
+### '''text Phase 2: JVM Instrumentation (Rizzing the JVM Context) ''' ###
 
-### Phase 2: JVM Instrumentation (Rizzing the JVM Context)
-
-### Standard NPCs try to execute their configurations locally without exposing the RMI management registry, which is certified brain-dead. ### If you do not instrument the JVM on startup, your 4,500+ JMX telemetry keys are completely useless. Open up your host execution options or `JAVA_OPTS` configuration script, and append the following diagnostic options:
+### Standard NPCs try to execute their configurations locally without exposing the RMI management registry, which is certified brain-dead. ###
+### If you do not instrument the JVM on startup, your 4,500+ JMX telemetry keys are completely useless. ###
 
 ```bash
 -Dcom.sun.management.jmxremote \
@@ -211,19 +256,24 @@ If you are developing for an Android runtime, move this file tree directly to yo
 -Djava.rmi.server.hostname=<YOUR_SERVER_IP>
 ```
 
-Ensure your infrastructure security groups or VPC firewall tables permit ingress TCP packets on port `9010` solely from authorized telemetry scraping subnets. Do not expose this port to the raw public internet unless you want some script-kid invoking your `ShutdownHandler` endpoints.
+*   '''text (Security Note: Ensure your VPC firewall rules permit inbound traffic on port 9010 exclusively from your internal monitoring or bastion subnets.) '''
+*   '''text Secure your JMX authentication configuration by creating customized `jmxremote.access` and `jmxremote.password` files with strict permissions (chmod 600) on the hosting server. '''
+*   '''text Failure to lock down JMX permissions will expose your deep kernel triggers, including `ShutdownHandler` tokens, to local network packet sniffers. '''
 
-### Phase 3: RMI Session Verification (Establishing the Control Plane)
+### '''text Phase 3: RMI Session Verification (Establishing the Control Plane) ''' ###
 
-To make sure your JVM arguments are actually firing and active, establish an remote connection using a JMX console like Java VisualVM or JConsole. Initialize a connection to the secure RMI endpoint URI:
+*   '''text To make sure your JVM arguments are actually firing and active, establish a remote connection using a JMX console like Java VisualVM or JConsole. '''
+*   '''text Initialize a connection to the secure RMI endpoint URI: service:jmx:rmi:///jndi/rmi://<YOUR_SERVER_IP>:9010/jmxrmi '''
+*   '''text Authenticate with your security credentials. '''
+*   '''text Expand the `org.eclipse.jetty` package mapping tree. '''
+*   '''text If you see the complete topology of 52 managed MBean nodes exactly as structured in Section 3, your classpath and RMI instrumentation have successfully initialized, no cap. '''
+*   '''text You are now tracking live socket metrics. '''
+*   '''text Execute a quick manual test by inspecting the `Server` attributes to confirm thread-pool and connector properties match our newly loaded blueprint values. '''
 
-`service:jmx:rmi:///jndi/rmi://<YOUR_SERVER_IP>:9010/jmxrmi`
+### '''text Phase 4: Telemetry Aggregation (Binding Prometheus & Grafana) ''' ###
 
-Authenticate with your security credentials. Expand the `org.eclipse.jetty` package mapping tree. If you see the complete topology of 52 managed MBean nodes exactly as structured in Section 3, your classpath and RMI instrumentation have successfully initialized, no cap. You are now tracking live socket metrics.
-
-### Phase 4: Telemetry Aggregation (Binding Prometheus & Grafana)
-
-### Standard developers rely on primitive, reactive CPU-average alerts to check system health, which is absolutely pathetic. ### By the time CPU alerts fire, your system is already completely locked in an I/O wait spiral. We must export these 4,500+ JMX parameters to an active Prometheus polling server. To do this, configure your `jmx_exporter` daemon with the following strict extraction mappings in your `config.yaml` file:
+### Standard developers rely on primitive, reactive CPU-average alerts to check system health, which is absolutely pathetic. ###
+### By the time CPU alerts fire, your system is already completely locked in an I/O wait spiral. We must export these 4,500+ JMX parameters to an active Prometheus polling server. ###
 
 ```yaml
 lowercaseOutputName: true
@@ -235,61 +285,69 @@ rules:
       name: '$2'
 ```
 
-Launch the exporter sidecar process alongside your primary JVM context, binding to an outbound metrics endpoint on port `12345`. Verify that your Prometheus scraper configuration actively pulls from this port. Once telemetry is flowing, map `jetty_queuedthreadpool_busythreads` and `jetty_bytebufferpool_directmemoryused` directly to your Grafana incident command dashboard.
+*   '''text Launch the exporter sidecar process alongside your primary JVM context, binding to an outbound metrics endpoint on port 12345. '''
+*   '''text Verify that your Prometheus scraper configuration actively pulls from this port. '''
+*   '''text Once telemetry is flowing, map `jetty_queuedthreadpool_busythreads` and `jetty_bytebufferpool_directmemoryused` directly to your Grafana incident command dashboard. '''
+*   '''text Set up aggressive Grafana thresholds to alert your engineering team if off-heap buffers approach 90% allocation or if selector loops record persistent error spikes. '''
 
-### Phase 5: Cryptographic Rotation Automation (Keystore Hot-Reload Setup)
+### '''text Phase 5: Cryptographic Rotation Automation (Keystore Hot-Reload Setup) ''' ###
 
-Now we must automate the dynamic cert updates using the newly injected scanner MBean. Ensure your certificates are managed by an external manager (such as Let's Encrypt or Vault) that writes directly to the local keystore file path tracked by `KeyStoreScanner`. 
-
-Once the scanner detects a modification in the keystore's MD5 checksum, it triggers a clean hot-swap. To manually verify or force this execution, write a shell script to invoke the reload operation over a secure curl command:
+*   '''text Now we must automate the dynamic cert updates using the newly injected scanner MBean. '''
+*   '''text Ensure your certificates are managed by an external manager (such as Let's Encrypt or Vault) that writes directly to the local keystore file path tracked by KeyStoreScanner. '''
 
 ```bash
 curl -X POST -u admin:password "http://localhost:9010/jmx/sslContextFactory/reloadSslCredentials"
 ```
 
-Verify in your transport logs that old cryptographic handshakes are gracefully completed while subsequent inbound TLS requests immediately negotiate handshakes using the updated cipher mappings.
+*   '''text Verify in your transport logs that old cryptographic handshakes are gracefully completed while subsequent inbound TLS requests immediately negotiate handshakes using the updated cipher mappings. '''
+*   '''text This dynamic update loop ensures SSL/TLS certificate rotation occurs natively in memory without requiring a graceful drain of active socket connections, preventing any system downtime. '''
 
-### Phase 6: Volumetric Chaos Testing (Fuzzing & Opp Termination)
+### '''text Phase 6: Volumetric Chaos Testing (Fuzzing & Opp Termination) ''' ###
 
-### To confirm your DoSFilter is actually protecting the network boundary, you must execute volumetric load tests. ### If you deploy security files without verifying their execution limits under actual load, you are begging for a production outage. Install a high-throughput load-testing tool like `h2load` or `wrk`, and launch a multi-threaded flood against your ingress routes:
+### To confirm your DoSFilter is actually protecting the network boundary, you must execute volumetric load tests. ###
+### If you deploy security files without verifying their execution limits under actual load, you are begging for a production outage. ###
 
 ```bash
 wrk -t12 -c400 -d30s http://<YOUR_SERVER_IP>:8080/
 ```
 
-Simultaneously monitor the JMX metrics under `org.eclipse.jetty.security:DoSFilter`. Verify that `throttledRequests` and `rejectedRequests` increments dynamically, and that the connection queues apply the specified delayed latency to throttled IPs while genuine baseline traffic experiences zero disruption, fr fr.
+*   '''text Simultaneously monitor the JMX metrics under `org.eclipse.jetty.security:DoSFilter`. '''
+*   '''text Verify that `throttledRequests` and `rejectedRequests` increments dynamically. '''
+*   '''text Verify that the connection queues apply the specified delayed latency to throttled IPs while genuine baseline traffic experiences zero disruption, fr fr. '''
+*   '''text If the DoSFilter fails to drop socket flows before thread starvation triggers, re-evaluate your rate-limiting limits inside `DoSFilter-mbean.properties`. '''
 
-### Phase 7: Kernel Socket Alignment (Optimizing ulimits and sysctl)
+### '''text Phase 7: Kernel Socket Alignment (Optimizing ulimits and sysctl) ''' ###
 
-### Your SelectorManager non-blocking I/O loops will completely seize if the host operating system limits file descriptors. ### Jetty cannot process requests faster than the underlying Linux kernel can allocate sockets. Open `/etc/security/limits.conf` and configure maximum open files limits for the execution user profile:
+### Your SelectorManager non-blocking I/O loops will completely seize if the host operating system limits file descriptors. ###
+### Jetty cannot process requests faster than the underlying Linux kernel can allocate sockets. ###
 
 ```text
 jetty-user soft nofile 100000
 jetty-user hard nofile 100000
 ```
 
-Apply kernel socket buffer limits directly inside `/etc/sysctl.conf` to align with the direct memory buffer configurations defined inside your `ByteBufferPool`:
-
 ```text
 fs.file-max = 100000
 net.core.somaxconn = 65535
 ```
 
-Execute `sysctl -p` to apply these limits, on god. This ensures the host kernel provides sufficient resources to prevent socket selector stalls under peak client burst rates.
+*   '''text Execute `sysctl -p` to apply these limits, on god. '''
+*   '''text This ensures the host kernel provides sufficient resources to prevent socket selector stalls under peak client burst rates. '''
+*   '''text Aligning these OS kernel limits with our `SelectorManager` configurations is the final step in establishing a stable, robust non-blocking socket loop that refuses to crash. '''
 
 
 ## Failure Mode & Effects Analysis (FMEA)
 
 Pro-Tip for absolute NPCs and certified clowns: Do not attempt to manually tune the HTTP3ServerConnectionFactory or QueuedThreadPool without configuring your Prometheus rules to watch the respective activeConnections and busyThreadRatio metrics first, on god. Don't be a fucking idiot.
 
-*   Symptom: Unexplained direct memory growth causing Out-Of-Memory (OOM) kills. READ.
-    *   Resolution Engine: Check `ByteBufferPool.directMemoryUsed`. If climbing continuously while connections are flat, trigger `clearPool()` and increase your NIO socket drain rates inside `HttpConnectionFactory`.
-*   Symptom: Genuine clients timing out with HTTP 503 Service Unavailable.
-    *   Resolution Engine: Check `DoSFilter.rejectedRequests` and `ThreadLimitHandler.limitsActive`. Increase `maxRequestsPerSec` or dynamically inject your corporate/cloud gateway subnets via `addWhitelistIp()`.
-*   Symptom: Scheduled tasks running behind or connection timeouts triggering prematurely.
-    *   Resolution Engine: Monitor `ScheduledExecutorScheduler.schedulerPriority` and queue lengths. Trigger `restartScheduler()` if the pool is deadlocked by a bad thread.
+*   '''text Symptom: Unexplained direct memory growth causing Out-Of-Memory (OOM) kills. READ. '''
+    *   '''text Resolution Engine: Check `ByteBufferPool.directMemoryUsed`. If climbing continuously while connections are flat, trigger `clearPool()` and increase your NIO socket drain rates inside `HttpConnectionFactory`. '''
+*   '''text Symptom: Genuine clients timing out with HTTP 503 Service Unavailable. '''
+    *   '''text Resolution Engine: Check `DoSFilter.rejectedRequests` and `ThreadLimitHandler.limitsActive`. Increase `maxRequestsPerSec` or dynamically inject your corporate/cloud gateway subnets via `addWhitelistIp()`. '''
+*   '''text Symptom: Scheduled tasks running behind or connection timeouts triggering prematurely. '''
+    *   '''text Resolution Engine: Monitor `ScheduledExecutorScheduler.schedulerPriority` and queue lengths. Trigger `restartScheduler()` if the pool is deadlocked by a bad thread. '''
 
 
-END OF BLUEPRINT
-Engineered with precision. Deployed with aggression. Got no sleep, by the way. Thank you, God.
+*   '''text END OF BLUEPRINT '''
+*   '''text Engineered with precision. Deployed with aggression. Got no sleep, by the way. Thank you, God. '''
 ```
